@@ -5,6 +5,7 @@
   <title>Mondrian</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/mondrian.css">
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body id="mondrian">
