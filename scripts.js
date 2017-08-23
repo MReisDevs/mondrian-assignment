@@ -11,6 +11,24 @@ window.addEventListener("load", function(){
 			event.target.style.backgroundColor = currentColor ;
 		});
 	}
-	var saveButton = document.getElementByID("save_button")
-	saveButton.addEventListener("click", function())
+  	var get_time = function(){
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "/saves.php");
+
+    	request.send();
+
+    	request.addEventListener("load", function(event){
+      		var request = event.target;
+      		alert(request.response)
+      	})
+    }
+
+	var saveButton = document.getElementById("save_button");
+	saveButton.addEventListener("click", get_time
+	})
+
+	// Goals: On saveButton click: 
+	// Get info from savefiles.csv via saves.php
+	// Put current row colors into array
+	// append that array to csv
 });
